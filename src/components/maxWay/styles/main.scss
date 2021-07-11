@@ -1,0 +1,92 @@
+.icon {
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+
+  //color styles
+  &.icon-yellow{
+    background-color: #F1B301;
+  }
+
+  &.icon-black{
+    background-color: black;
+  }
+
+  &.icon-white{
+    background-color: white;
+  }
+
+
+  //icon-width styles
+  &.icon-w-32{
+    width: 32px;
+  }
+
+  &.icon-w-24{
+    width: 24px;
+  }
+
+  &.icon-w-18 {
+    width: 18px;
+  }
+
+  &.icon-w-14 {
+    width: 14px;
+  }
+
+
+  //icon-height styles
+  &.icon-h-32{
+    height: 32px;
+  }
+
+  &.icon-h-26{
+    height: 26px;
+  }
+
+  &.icon-h-24{
+    height: 24px;
+  }
+
+  &.icon-h-21 {
+    height: 21px;
+  }
+
+  &.icon-h-18 {
+    height: 18px;
+  }
+
+  &.icon-h-14 {
+    height: 14px;
+  }
+
+
+  //icon-images
+
+  &.icon-call {
+    mask-image: url("../assets/icons/phone.svg");
+    -webkit-mask-image: url("../assets/icons/phone.svg");
+  }
+
+  &.icon-plus {
+    mask-image: url("../assets/icons/plus.svg");
+    -webkit-mask-image: url("../assets/icons/plus.svg");
+  }
+
+  &.icon-filtr{
+    mask-image: url("../assets/icons/filter.svg");
+    -webkit-mask-image: url("../assets/icons/filter.svg");
+  }
+
+  &.icon-korzina{
+    mask-image: url("../assets/icons/korzina.svg");
+    -webkit-mask-image: url("../assets/icons/korzina.svg");
+  }
+
+  &.icon-nav-toggle{
+    mask-image: url("../assets/icons/nav-toggle.svg");
+    -webkit-mask-image: url("../assets/icons/nav-toggle.svg");
+  }
+}
+

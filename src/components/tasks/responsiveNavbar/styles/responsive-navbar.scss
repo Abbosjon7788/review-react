@@ -1,0 +1,15 @@
+.icon{
+  width: 24px;
+  height: 24px;
+  //padding: 24px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: white;
+
+  &.icon-burger{
+    mask-image: url("../icons/navber-burger.svg");
+    -webkit-mask-image: url("../icons/navber-burger.svg");
+  }
+}

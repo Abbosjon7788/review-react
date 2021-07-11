@@ -1,0 +1,63 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: white;
+
+  &.icon-share {
+    mask-image: url("../shareItemImages/share.png");
+    -webkit-mask-image: url("../shareItemImages/share.png");
+  }
+
+  &.icon-camera{
+    mask-image: url("../shareItemImages/camera-to-take-photos.png");
+    -webkit-mask-image: url("../shareItemImages/camera-to-take-photos.png");
+  }
+
+  &.icon-video{
+    mask-image: url("../shareItemImages/video-camera.png");
+    -webkit-mask-image: url("../shareItemImages/video-camera.png");
+  }
+
+  &.icon-folder{
+    mask-image: url("../shareItemImages/folder.png");
+    -webkit-mask-image: url("../shareItemImages/folder.png");
+  }
+
+  &.icon-microphone{
+    mask-image: url("../shareItemImages/microphone.png");
+    -webkit-mask-image: url("../shareItemImages/microphone.png");
+  }
+
+  &.icon-envelope{
+    mask-image: url("../shareItemImages/envelope.png");
+    -webkit-mask-image: url("../shareItemImages/envelope.png");
+  }
+
+  &.icon-cancel{
+    mask-image: url("../shareItemImages/cancel.svg");
+    -webkit-mask-image: url("../shareItemImages/cancel.svg");
+  }
+
+}
+
+.share-menu{
+  //transition: all 0.1s linear;
+  &.active{
+    transform: translate(-30px, -50px);
+  }
+  div{
+    transition: all 0.1s linear;
+  }
+}
+
+.share-button{
+  transition: all 0.2s linear;
+  transform: translate(-64px, 0);
+  &.active{
+    transform: translate(-31px, 103px);
+  }
+}
