@@ -14,7 +14,7 @@ class NavigationBar extends Component {
             this.setState({isOpen: !this.state.isOpen});
         }
         return (
-            <nav className="lg:flex lg:items-center flex flex-wrap">
+            <nav className="lg:flex lg:pl-32 z-9999  lg:items-center flex flex-wrap">
                 <a href="#" className="inline-flex">
                     <img src="./maxWayImages/images/logo.svg" alt=""/>
                 </a>
@@ -22,7 +22,7 @@ class NavigationBar extends Component {
                         className="inline-flex lg:hidden ml-auto items-center px-3 pt-3 pb-1 rounded hover:bg-gray-300">
                     <span className="icon icon-nav-toggle icon-w-18 icon-black"/>
                 </button>
-                <div className={`w-full ${this.state.isOpen ? 'hidden' : 'block'} lg:ml-auto lg:bg-transparent lg:rounded-none rounded-md lg:overflow-auto overflow-hidden bg-magenta lg:pt-0 pt-2 lg:mt-0 mt-4 lg:w-4/5 lg:flex lg:flex-grow'}`}>
+                <div className={`w-full ${this.state.isOpen ? 'hidden' : 'block'} z-9999 lg:ml-auto lg:bg-transparent lg:rounded-none rounded-md lg:overflow-auto overflow-hidden bg-magenta lg:pt-0 pt-2 lg:mt-0 mt-4 lg:w-4/5 lg:flex lg:flex-grow'}`}>
                     <div className="lg:inline-flex lg:w-full lg:rounded-none rounded lg:overflow-auto overflow-hidden lg:flex-row flex items-center flex-col">
                         <div className="lg:w-3/5 w-full lg:pl-0 pl-4 lg:flex lg:items-center">
                             <a href="#" className="lg:mt-0 mt-2 lg:mr-1 lg:ml-auto lg:px-3 lg:py-1 font-semibold rounded lg:inline-flex flex lg:text-black text-white lg:hover:text-magenta border-2 border-transparent hover:border-magenta lg:focus:text-magenta">Menu</a>
