@@ -6,10 +6,10 @@ class MainView extends Component {
             <div className="flex lg:pl-32 lg:flex-row lg:flex-none lg:w-full lg:box-border flex-col flex-col-reverse mb-20">
                 <div className="lg:w-3/5 w-full flex flex-col lg:mt-0 mt-20">
                     <div className="lg:bg-transparent lg:w-1/2 relative lg:pt-0 pt-80 lg:mt-0 mt-52 bg-magenta lg:px-0 md:px-12 lg:pb-0 pb-14">
-                        <h1 className="xl:text-6xl lg:leading-loose text-5xl lg:text-black text-white lg:text-left text-center tracking-wider leading-tight font-extrabold lg:mx-0 mx-auto lg:w-full w-1/2">Siz izlagan mazzali ta’mlar</h1>
+                        <h1 className="xl:text-6xl lg:leading-loose text-6xl lg:text-black text-white lg:text-left text-center tracking-wider leading-tight font-extrabold lg:mx-0 mx-auto lg:w-full w-1/2">Siz izlagan mazzali ta’mlar</h1>
                         <p className="mt-4 text-base lg:text-left text-center lg:text-black text-white lg:w-full w-1/2 lg:mx-0 mx-auto">When an unknown printer took a galley of type scrambled it to make a type specimen </p>
                     </div>
-                    <div className="flex items-end lg:mt-14 mt-8 h-1/2">
+                    <div className="flex lg:pr-0 md:px-10 px-6  items-end lg:mt-14 mt-8 h-1/2">
                         <div className="xl:w-1/3 w-2/5 overflow-hidden mr-5 pt-4 pl-4 rounded-md bg-yellow-400">
                             <button type="button" className="flex items-center px-4 py-1 rounded-2xl bg-yellow-300">
                                 <img src="./maxWayImages/images/fire.svg" alt=""/>

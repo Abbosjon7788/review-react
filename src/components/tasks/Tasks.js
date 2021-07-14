@@ -8,12 +8,13 @@ const Tasks = () => {
         {link: "hamburger-price", title: "Hamburger Price"},
         {link: "share-item", title: "Share Item"},
         {link: "array-function", title: "Array Function"},
-        {link: "change-modal", title: "Change Modal"},
+        {link: "change-modal", title: "New Modal"},
+        {link: "react-hooks-modal", title: "Modal"},
         {link: "responsive-navbar", title: "Responsive Navbar"},
     ];
 
     return (
-        <div className="flex flex-wrap flex-row">
+        <div className="flex flex-wrap flex-row mt-12">
             {tasks.map((element) => (
                 <div className="w-1/6 px-4">
                     <Link to={`/tasks/${element.link}`}

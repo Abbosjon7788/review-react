@@ -10,7 +10,8 @@ import ShareItem from "./components/tasks/shareItem/ShareItem";
 import ProductPage from "./components/productPage/ProductPage";
 import ArrayFunction from "./components/productPage/ArrayFunction";
 import MaxWay from "./components/maxWay/MaxWay";
-import ChangeModal from "./components/tasks/changeModal/ChangeModal";
+import NewModal from "./components/tasks/changeModal/newModal/NewModal";
+import OpenModal from "./components/tasks/changeModal/modal/OpenModal";
 import ResponsiveNavbar from "./components/tasks/responsiveNavbar/ResponsiveNavbar";
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
                     <Route exact path="/tasks/hamburger-price" component={HamburgerPrice}/>
                     <Route exact path="/tasks/share-item" component={ShareItem}/>
                     <Route exact path="/tasks/array-function" component={ArrayFunction}/>
-                    <Route exact path="/tasks/change-modal" component={ChangeModal}/>
+                    <Route exact path="/tasks/change-modal" component={NewModal}/>
+                    <Route exact path="/tasks/react-hooks-modal" component={OpenModal}/>
                     <Route exact path="/tasks/responsive-navbar" component={ResponsiveNavbar}/>
                 </Switch>
 

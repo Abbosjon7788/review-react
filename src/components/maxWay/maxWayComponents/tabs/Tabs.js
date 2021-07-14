@@ -20,7 +20,7 @@ class Tabs extends Component {
         }
 
         return (
-            <div className="border-t-2 lg:overflow-hidden lg:ml-32 lg:mr-32 z-10 lg:box-border relative">
+            <div className="border-t-2 lg:overflow-hidden md:mx-16 mx-6  lg:ml-32 lg:mr-32 z-10 lg:box-border relative">
                 <div className="flex mt-6 pb-28">
                     <button onClick={() => (toggle(1))} className={`w-1/8 px-6 py-2 rounded-3xl font-semibold ${this.state.toggleTab === 1 ? 'bg-yellow-400 text-white' : ''} text-black cursor-pointer justify-center flex`}>
                         <span>Barchasi</span>

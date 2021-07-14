@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {AvForm, AvField} from 'availity-reactstrap-validation';
-import {Modal, ModalBody, ModalFooter} from "reactstrap";
+import {Modal} from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
+import './product-modal.scss';
 
 class ProductPage extends Component {
 
@@ -47,7 +49,7 @@ class ProductPage extends Component {
         };
 
         const changeModal = () => {
-            this.setState({modalOpen: !this.state.modalOpen});
+            console.log("This is Modal!");
         };
 
         return (
@@ -87,17 +89,14 @@ class ProductPage extends Component {
                         this.state.products.map((element, index) => (
 
                                 <div className="p-4 w-1/5">
-                                    <div
-                                        className="bg-white border-2 border-blue-500 cursor-pointer hover:border-blue-700 rounded-lg p-6">
+                                    <div className="bg-white border-2 border-blue-500 cursor-pointer hover:border-blue-700 rounded-lg p-6">
                                         <div className="flex items-center">
                                             <h1 className="text-xl font-serif mr-3 font-semibold">Title:</h1>
-                                            <span
-                                                className="font-bold text-base tracking-widest font-noto">{element.productName}</span>
+                                            <span className="font-bold text-base tracking-widest font-noto">{element.productName}</span>
                                         </div>
                                         <div className="flex items-center mt-4">
                                             <h1 className="text-xl font-serif mr-3 font-semibold">Price:</h1>
-                                            <span
-                                                className="font-bold text-base tracking-widest font-noto">{element.productPrice}$</span>
+                                            <span className="font-bold text-base tracking-widest font-noto">{element.productPrice}$</span>
                                         </div>
                                         <div className="flex items-center mt-4">
                                             <h1 className="text-xl font-serif mr-3 font-semibold">Color:</h1>
@@ -120,19 +119,6 @@ class ProductPage extends Component {
 
                     }
                 </div>
-
-                <Modal isOpen={this.state.modalOpen} toggle={changeModal}>
-                    <AvForm>
-                        <ModalBody>
-
-                        </ModalBody>
-
-                        <ModalFooter>
-
-                        </ModalFooter>
-                    </AvForm>
-
-                </Modal>
 
             </div>
         );

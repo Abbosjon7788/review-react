@@ -17,6 +17,10 @@
     background-color: white;
   }
 
+  &.icon-gray{
+    background-color: #646466;
+  }
+
 
   //icon-width styles
   &.icon-w-32{
@@ -34,6 +38,7 @@
   &.icon-w-14 {
     width: 14px;
   }
+
 
 
   //icon-height styles
@@ -62,11 +67,47 @@
   }
 
 
+
   //icon-images
 
   &.icon-call {
     mask-image: url("../assets/icons/phone.svg");
     -webkit-mask-image: url("../assets/icons/phone.svg");
+  }
+
+  &.icon-facebook {
+    mask-image: url("../assets/icons/facebook.svg");
+    -webkit-mask-image: url("../assets/icons/facebook.svg");
+  }
+
+  &.icon-chevron-down {
+    mask-image: url("../assets/icons/chevron-down.svg");
+    -webkit-mask-image: url("../assets/icons/chevron-down.svg");
+  }
+
+  &.icon-chevron-up {
+    mask-image: url("../assets/icons/chevron-up.svg");
+    -webkit-mask-image: url("../assets/icons/chevron-up.svg");
+  }
+
+  &.icon-instagram {
+    mask-image: url("../assets/icons/instagram.svg");
+    -webkit-mask-image: url("../assets/icons/instagram.svg");
+  }
+
+  &.icon-telegram {
+    mask-image: url("../assets/icons/telegram.svg");
+    -webkit-mask-image: url("../assets/icons/telegram.svg");
+  }
+
+  &.icon-tiktok {
+    mask-image: url("../assets/icons/tiktok.svg");
+    -webkit-mask-image: url("../assets/icons/tiktok.svg");
+  }
+
+  &.icon-youtube {
+    mask-image: url("../assets/icons/youtube.svg");
+    -webkit-mask-image: url("../assets/icons/youtube.svg");
   }
 
 

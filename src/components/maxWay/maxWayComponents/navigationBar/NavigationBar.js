@@ -14,7 +14,7 @@ class NavigationBar extends Component {
             this.setState({isOpen: !this.state.isOpen});
         }
         return (
-            <nav className="lg:flex lg:pl-32 z-9999  lg:items-center flex flex-wrap">
+            <nav className="lg:flex lg:pl-32 z-9999 lg:pr-0 md:px-16 px-6  lg:items-center flex flex-wrap">
                 <a href="#" className="inline-flex">
                     <img src="./maxWayImages/images/logo.svg" alt=""/>
                 </a>
