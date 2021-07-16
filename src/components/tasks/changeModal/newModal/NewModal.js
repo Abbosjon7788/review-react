@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Modal} from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
-import './modal-styles.scss';
+import './modal-style.scss';
 
 export default class NewModal extends Component {
 

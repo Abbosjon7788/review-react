@@ -1,12 +1,15 @@
-
-.customModal {
-  background: #b2dbbf;
+.bg-modal {
+  background: white;
   max-width: 500px;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
-.react-responsive-modal-closeButton{
-  border: 2px solid black;
+.react-responsive-modal-closeButton {
+  border: none;
+  // padding: 8px;
   border-radius: 50%;
+  &:hover{
+    background-color: #e6e8eb;
+  }
 }
