@@ -119,8 +119,8 @@ class ToDoList extends Component {
                             {
                                 this.state.doneDatabase.map((element, index)=>(
                                     <div className="flex w-4/5 mx-auto mt-6">
-                                        <span className="border w-9/10 text-xl tracking-wider text-center border-blue-500 py-2 rounded-l-md block">{element.inputValue}</span>
-                                        <span className="border w-1/10 text-xl text-center text-white border-blue-500 text-white bg-blue-500 font-bold cursor-pointer hover:bg-blue-600 hover:border-blue-600 py-2 rounded-r-md block" onClick={()=>deleteDoneList(index)}>&#10005;</span>
+                                        <span className="border w-9/10 text-xl tracking-wider text-center border-red-500 py-2 rounded-l-md block">{element.inputValue}</span>
+                                        <span className="border w-1/10 text-xl text-center text-white border-red-500 text-white bg-red-500 font-bold cursor-pointer hover:bg-red-600 hover:border-red-600 py-2 rounded-r-md block" onClick={()=>deleteDoneList(index)}>&#10005;</span>
                                     </div>
                                 ))
                             }
