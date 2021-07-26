@@ -76,7 +76,7 @@ class Trello extends Component {
         const deleteItem = (index1, index2) => {
             console.log('index1: ' + index1);
             console.log('index2: ' + index2);
-            this.state.database[index1].item.splice(index2,1);
+            this.state.database[index1].item.splice(index2, 1);
             this.setState({item: this.state.database[index1].item});
         };
 

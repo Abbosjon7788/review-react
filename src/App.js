@@ -14,6 +14,11 @@ import OpenModal from "./components/tasks/changeModal/modal/OpenModal";
 import ResponsiveNavbar from "./components/tasks/responsiveNavbar/ResponsiveNavbar";
 import ProductPage from "./components/productPage/ProductPage";
 import ToDoList from "./components/toDoList/ToDoList";
+import Flickr from "./components/flickr/Flickr";
+import LifeCycleMethods from "./components/lifeCycleMethods/LifeCycleMethods";
+import Users from "./components/lifeCycleMethods/Users";
+import Photos from "./components/lifeCycleMethods/Photos";
+import Employee from "./components/lifeCycleMethods/Employee";
 
 function App() {
     return (
@@ -27,6 +32,11 @@ function App() {
                     <Route exact path="/product-page" component={ProductPage}/>
                     <Route exact path="/max-way" component={MaxWay}/>
                     <Route exact path="/to-do-list" component={ToDoList}/>
+                    <Route exact path="/flickr" component={Flickr}/>
+                    <Route exact path="/life-cycle-methods" component={LifeCycleMethods}/>
+                    <Route exact path="/life-cycle-methods/users" component={Users}/>
+                    <Route exact path="/life-cycle-methods/photos" component={Photos}/>
+                    <Route exact path="/life-cycle-methods/employee" component={Employee}/>
                     <Route exact path="/tasks" component={Tasks}/>
                     <Route exact path="/tasks/contact-clients" component={ContactClients}/>
                     <Route exact path="/tasks/hamburger-price" component={HamburgerPrice}/>

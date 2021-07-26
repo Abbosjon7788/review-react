@@ -273,6 +273,9 @@ module.exports = {
       noto: ['Noto Serif','serif'],
       viaoda: ['Viaoda Libre','cursive'],
       shoulders: ['Big Shoulders Stencil Display','cursive'],
+      lobster: ['Lobster', 'cursive'],
+      josefin: ['Josefin Sans', 'sans-serif'],
+      lobster2: ['Lobster Two', 'cursive'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

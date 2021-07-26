@@ -22639,6 +22639,18 @@ video {
   font-family: Big Shoulders Stencil Display, cursive;
 }
 
+.font-lobster{
+  font-family: Lobster, cursive;
+}
+
+.font-josefin{
+  font-family: Josefin Sans, sans-serif;
+}
+
+.font-lobster2{
+  font-family: Lobster Two, cursive;
+}
+
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -52495,6 +52507,18 @@ video {
     font-family: Big Shoulders Stencil Display, cursive;
   }
 
+  .sm\:font-lobster{
+    font-family: Lobster, cursive;
+  }
+
+  .sm\:font-josefin{
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  .sm\:font-lobster2{
+    font-family: Lobster Two, cursive;
+  }
+
   .sm\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
@@ -82277,6 +82301,18 @@ video {
 
   .md\:font-shoulders{
     font-family: Big Shoulders Stencil Display, cursive;
+  }
+
+  .md\:font-lobster{
+    font-family: Lobster, cursive;
+  }
+
+  .md\:font-josefin{
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  .md\:font-lobster2{
+    font-family: Lobster Two, cursive;
   }
 
   .md\:text-xs{
@@ -112063,6 +112099,18 @@ video {
     font-family: Big Shoulders Stencil Display, cursive;
   }
 
+  .lg\:font-lobster{
+    font-family: Lobster, cursive;
+  }
+
+  .lg\:font-josefin{
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  .lg\:font-lobster2{
+    font-family: Lobster Two, cursive;
+  }
+
   .lg\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
@@ -141847,6 +141895,18 @@ video {
     font-family: Big Shoulders Stencil Display, cursive;
   }
 
+  .xl\:font-lobster{
+    font-family: Lobster, cursive;
+  }
+
+  .xl\:font-josefin{
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  .xl\:font-lobster2{
+    font-family: Lobster Two, cursive;
+  }
+
   .xl\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
@@ -171629,6 +171689,18 @@ video {
 
   .\32xl\:font-shoulders{
     font-family: Big Shoulders Stencil Display, cursive;
+  }
+
+  .\32xl\:font-lobster{
+    font-family: Lobster, cursive;
+  }
+
+  .\32xl\:font-josefin{
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  .\32xl\:font-lobster2{
+    font-family: Lobster Two, cursive;
   }
 
   .\32xl\:text-xs{

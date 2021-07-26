@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Counter extends Component {
+class CounterClass extends Component {
 
     constructor(props) {
         super(props);
@@ -21,7 +21,8 @@ class Counter extends Component {
 
 
         return (
-            <div className="bg-white w-full border rounded-lg">
+            <div className="bg-white w-full overflow-hidden border rounded-lg">
+                <h1 className="bg-gray-200 text-2xl font-noto font-bold text-center p-4 mb-4">Counter Class</h1>
                 <h3 className="font-bold text-4xl my-8 text-center">{this.state.number}</h3>
                 <div className="bg-yellow-50 border-t p-4 flex justify-between py-4">
                     <button type="button" onClick={decreaseNumber}
@@ -36,4 +37,4 @@ class Counter extends Component {
     }
 }
 
-export default Counter;
+export default CounterClass;
