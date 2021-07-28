@@ -37,6 +37,7 @@ class LifeCycleMethods extends Component {
                     <Link to="/life-cycle-methods/users" className="text-lg font-mono flex items-center justify-center bg-gray-800 text-white tracking-wider w-1/8 rounded-md py-1">Users</Link>
                     <Link to="/life-cycle-methods/photos" className="text-lg font-mono ml-6 flex items-center justify-center bg-gray-800 text-white tracking-wider w-1/8 rounded-md py-1">Photos</Link>
                     <Link to="/life-cycle-methods/employee" className="text-lg font-mono ml-6 flex items-center justify-center bg-gray-800 text-white tracking-wider w-1/8 rounded-md py-1">Employee</Link>
+                    <Link to="/life-cycle-methods/posts" className="text-lg font-mono ml-6 flex items-center justify-center bg-gray-800 text-white tracking-wider w-1/8 rounded-md py-1">Posts</Link>
                 </div>
                 
                 <div className="flex flex-wrap mt-8 w-10/12 mx-auto">

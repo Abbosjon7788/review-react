@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import LifeCycleMethods from "./LifeCycleMethods";
+import LifeCycleMethods from "../LifeCycleMethods";
 import axios from "axios";
 import ClockLoader from "react-spinners/ClockLoader";
 import { css } from "@emotion/react";

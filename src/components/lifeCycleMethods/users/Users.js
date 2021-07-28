@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from "axios";
 import ClockLoader from "react-spinners/ClockLoader";
 import { css } from "@emotion/react";
-import LifeCycleMethods from "./LifeCycleMethods";
+import LifeCycleMethods from "../LifeCycleMethods";
 
 
 class Users extends Component {

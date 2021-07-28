@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import LifeCycleMethods from "./LifeCycleMethods";
+import LifeCycleMethods from "../LifeCycleMethods";
 import {AvForm, AvField} from 'availity-reactstrap-validation';
 import axios from 'axios';
 

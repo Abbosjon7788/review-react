@@ -16,9 +16,11 @@ import ProductPage from "./components/productPage/ProductPage";
 import ToDoList from "./components/toDoList/ToDoList";
 import Flickr from "./components/flickr/Flickr";
 import LifeCycleMethods from "./components/lifeCycleMethods/LifeCycleMethods";
-import Users from "./components/lifeCycleMethods/Users";
-import Photos from "./components/lifeCycleMethods/Photos";
-import Employee from "./components/lifeCycleMethods/Employee";
+import Users from "./components/lifeCycleMethods/users/Users";
+import Photos from "./components/lifeCycleMethods/photos/Photos";
+import Employee from "./components/lifeCycleMethods/employee/Employee";
+import Posts from "./components/lifeCycleMethods/posts/Posts";
+import PostView from "./components/lifeCycleMethods/posts/PostView";
 
 function App() {
     return (
@@ -37,6 +39,8 @@ function App() {
                     <Route exact path="/life-cycle-methods/users" component={Users}/>
                     <Route exact path="/life-cycle-methods/photos" component={Photos}/>
                     <Route exact path="/life-cycle-methods/employee" component={Employee}/>
+                    <Route exact path="/life-cycle-methods/posts" component={Posts}/>
+                    <Route exact path="/life-cycle-methods/posts/:id" component={PostView}/>
                     <Route exact path="/tasks" component={Tasks}/>
                     <Route exact path="/tasks/contact-clients" component={ContactClients}/>
                     <Route exact path="/tasks/hamburger-price" component={HamburgerPrice}/>
