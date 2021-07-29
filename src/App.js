@@ -21,6 +21,8 @@ import Photos from "./components/lifeCycleMethods/photos/Photos";
 import Employee from "./components/lifeCycleMethods/employee/Employee";
 import Posts from "./components/lifeCycleMethods/posts/Posts";
 import PostView from "./components/lifeCycleMethods/posts/PostView";
+import ReactRedux from "./components/reactRedux/ReactRedux";
+import CounterRedux from "./components/reactRedux/reduxComponents/CounterRedux";
 
 function App() {
     return (
@@ -41,6 +43,8 @@ function App() {
                     <Route exact path="/life-cycle-methods/employee" component={Employee}/>
                     <Route exact path="/life-cycle-methods/posts" component={Posts}/>
                     <Route exact path="/life-cycle-methods/posts/:id" component={PostView}/>
+                    <Route exact path="/react-redux" component={ReactRedux}/>
+                    <Route exact path="/react-redux/counter-redux" component={CounterRedux}/>
                     <Route exact path="/tasks" component={Tasks}/>
                     <Route exact path="/tasks/contact-clients" component={ContactClients}/>
                     <Route exact path="/tasks/hamburger-price" component={HamburgerPrice}/>

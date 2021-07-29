@@ -30,6 +30,9 @@ const Navigation = () => {
                 <NavItem className="px-2 py-1 mr-4 border-2 hover:bg-yellow-100 hover:text-red-600 hover:border-red-600 cursor-pointer rounded-lg">
                     <Link to="/life-cycle-methods">Life Cycle Methods</Link>
                 </NavItem>
+                <NavItem className="px-2 py-1 mr-4 border-2 hover:bg-yellow-100 hover:text-red-600 hover:border-red-600 cursor-pointer rounded-lg">
+                    <Link to="/react-redux">React Redux</Link>
+                </NavItem>
                 <NavItem className="px-2 py-1 ml-auto border-2 hover:bg-yellow-100 hover:text-red-600 hover:border-red-600 cursor-pointer rounded-lg">
                     <Link to="/tasks">Tasks</Link>
                 </NavItem>
