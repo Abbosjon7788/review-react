@@ -60,7 +60,6 @@ const PostView = (props) => {
                         <span className="font-mono text-lg italic">{user.id}</span>
                     </div>
                 </div>
-
             </div>
         </LifeCycleMethods>
     );
