@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from "react-redux";
+import {calculateCredit} from "../actions/bankCreditAction";
 
 const CreditCalendar = (props) => {
 	return (
@@ -63,4 +65,9 @@ const CreditCalendar = (props) => {
 
 };
 
-export default CreditCalendar;
+const mapStateToProps = (state) => {
+	console.log('this state' + state);
+	return state;
+};
+
+export default connect(mapStateToProps, {})(CreditCalendar);

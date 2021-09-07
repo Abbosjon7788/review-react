@@ -2,21 +2,38 @@ import React from 'react';
 import ReactRedux from '../ReactRedux';
 import {AvForm, AvField} from 'availity-reactstrap-validation';
 import CreditCalendar from './CreditCalendar';
+import {connect} from 'react-redux'
+import {getData, calculateCredit} from "../actions/bankCreditAction";
 
 const BankCredit = (props) => {
 
     const data = [
-        {previousPercentage: [20, 25, 30, 35, 45], label: "Boshlang'ich to'lov foizi", mark: "%", name: "previousPercentage"},
+        {
+            previousPercentage: [20, 25, 30, 35, 45],
+            label: "Boshlang'ich to'lov foizi",
+            mark: "%",
+            name: "previousPercentage"
+        },
         {previousPercentage: [12, 16, 20, 24], label: "Yillik foizi", mark: "%", name: "annualPercentage"},
         {previousPercentage: [1, 2, 3, 4, 5], label: "Yillik muddat", mark: "yil", name: "annualTerm"},
-        {previousPercentage: [2019, 2020, 2021, 2022, 2023, 2024], label: "Kalendar yil", mark: " - yil", name: "calendarYear"},
-        {previousPercentage: ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November'], label: "Kalendar oy", mark: "", name: "calendarMonth"},
+        {
+            previousPercentage: [2019, 2020, 2021, 2022, 2023, 2024],
+            label: "Kalendar yil",
+            mark: " - yil",
+            name: "calendarYear"
+        },
+        {
+            previousPercentage: ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November'],
+            label: "Kalendar oy",
+            mark: "",
+            name: "calendarMonth"
+        },
     ];
 
     const saveChanges = (event, errors, values) => {
-        if(values.creditAmount !== '' && values.previousPercentage !== '' && values.annualPercentage !== '' && values.annualTerm !== '' && values.calendarYear !== '' && values.calendarMonth !== ''){
-            console.log(values);
-        }else{
+        if (values.creditAmount !== '' && values.previousPercentage !== '' && values.annualPercentage !== '' && values.annualTerm !== '' && values.calendarYear !== '' && values.calendarMonth !== '') {
+            props.getData(values);
+        } else {
             alert('Please fill out all feilds!');
         }
     };
@@ -24,8 +41,9 @@ const BankCredit = (props) => {
     return (
         <ReactRedux>
             <div className="w-10/12 mx-auto rounded-md pb-6 overflow-hidden border">
-                <h1 className="font-bold font-serif tracking-widest p-6 text-xl bg-gray-200 border-b">Credit calculator</h1>
-                <AvForm onSubmit={saveChanges}  className="flex flex-wrap">
+                <h1 className="font-bold font-serif tracking-widest p-6 text-xl bg-gray-200 border-b">Credit
+                    calculator</h1>
+                <AvForm onSubmit={saveChanges} className="flex flex-wrap">
                     <div className="w-1/2 px-6 pt-6">
                         <AvField
                             label="Kredit miqdori"
@@ -36,7 +54,7 @@ const BankCredit = (props) => {
                         />
                     </div>
                     {
-                        data.map((element)=>(
+                        data.map((element) => (
                             <div className="w-1/2 px-6 pt-6">
                                 <AvField
                                     label={element.label}
@@ -47,7 +65,7 @@ const BankCredit = (props) => {
                                     {/*default value of option*/}
                                     <option value=""/>
                                     {
-                                        element.previousPercentage.map((element2)=>(
+                                        element.previousPercentage.map((element2) => (
                                             <option value={element2}>{element2 + element.mark}</option>
                                         ))
                                     }
@@ -57,14 +75,21 @@ const BankCredit = (props) => {
                     }
 
                     <div className="w-full">
-                        <button type="submit" className="px-4 tracking-wider py-2 text-white block ml-auto text-lg rounded-md mr-6 mt-6 bg-green-400 hover:bg-green-500">Calculate</button>
+                        <button type="submit" onClick={props.calculateCredit}
+                                className="px-4 tracking-wider py-2 text-white block ml-auto text-lg rounded-md mr-6 mt-6 bg-green-400 hover:bg-green-500">Calculate
+                        </button>
                     </div>
                 </AvForm>
             </div>
-            
+
             <CreditCalendar/>
         </ReactRedux>
     );
 };
 
-export default BankCredit;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return state;
+};
+
+export default connect(mapStateToProps, {getData, calculateCredit})(BankCredit);

@@ -5,7 +5,7 @@ const CounterHooks = () => {
 
     useEffect(() => {
         // componentDidMount va componentDidUpdate lar uchun ishlab beradi
-        document.title = number;
+        // document.title = number;
     });
 
     return (
